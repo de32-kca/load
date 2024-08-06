@@ -4,6 +4,7 @@
 
 ### Usage
 ```bash
+$ pip install git+https://github.com/de32-kca/load.git
 $ cnt
 ```
 ![image](https://github.com/user-attachments/assets/25436a9e-0fc8-4c39-897e-f508b9591a53)
