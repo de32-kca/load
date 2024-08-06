@@ -14,6 +14,9 @@ def load_data(path="~/code/de32-kca/transform_kca"):
 
     cntByMovie=movieList.merge(cnt, on="movieCd").sort_values("load_dt",ascending=False)
     cntByMovie.columns=["movieCd","movieNm","movieCnt"]
+    cntByMovie=cntByMovie.reset_index(drop=True)
+
+    cntByMovie.index+=1
 
     print(tabulate(cntByMovie,headers=["movieCd","movieNm","movieCnt"], tablefmt="outline"))
     #return cntByMovie
